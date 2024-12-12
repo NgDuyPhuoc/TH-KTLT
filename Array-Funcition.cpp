@@ -98,6 +98,11 @@ void tongChiSoLe(int a[], int n){
 	printf("\nTong cac chi so le trong mang: %d", CS_le);
 }
 
+void thoat(){
+	printf("Thoat chuong trinh");
+	
+}
+
 int main(){
 	int n = 0, c, a[MAX	];
 	
@@ -147,7 +152,7 @@ int main(){
 			tongChiSoLe(a, n);
 			break;
 		} else if(c == 9){
-			printf("Thoat chuong trinh");
+			thoat();
 			break;
 		} else {
 			printf("Chuong trinh khong ton tai");
