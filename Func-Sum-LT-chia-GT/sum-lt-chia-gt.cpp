@@ -22,11 +22,11 @@ int giaiThua(int n) {
 float tinhToan(int x, int n) {
 	float sum = 1;
 
-	for(int i = 1; i <= n; i++) {
+	for(int i = 2; i <= n; i++) {
 		int luythua = luyThua(x, i);
 		int giaithua = giaiThua(i);
 		
-		sum += (float)luythua / giaithua;
+		sum +=(float)luythua / giaithua;
 	}
 	return sum;
 }
