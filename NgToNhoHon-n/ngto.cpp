@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main(){
-	int n;
-	
-	printf("Nhap vao so nguyen n = ");
+void nhap(int &n){
+	printf("Nhap vao so phan tu n: ");
 	scanf("%d", &n);
-	
+}
+
+void xuatNgTo(int n){
 	for(int i = 2; i < n; i++){
 		int ngto = 1;
 		for(int j = 2; j * j <= i; j++){
@@ -18,6 +18,13 @@ int main(){
 			printf("%d ", i);
 		}
 	}
+}
+
+int main(){
+	int n;
+	
+	nhap(n);
+	xuatNgTo(n);
 	
 	return 0;
 }

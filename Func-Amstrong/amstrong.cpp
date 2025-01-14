@@ -16,7 +16,7 @@ int findAmstrong(int n){
 }
 
 int main() {
-	int n, n_temp, temp, sum = 0;
+	int n;
 	
 	printf("\n***KIEM TRA SO AMSTRONG***\n\n");
 	printf("Nhap vao mot so nguyen (n co 3 chu so) n = ");
@@ -25,7 +25,7 @@ int main() {
 	if(findAmstrong(n)){
 		printf("%d la so Amstrong", n);
 	} else{
-		printf("%d khong phai la so Amstrong");
+		printf("%d khong phai la so Amstrong", n);
 	}
 		
 	printf("\n\n=================================================\n");
